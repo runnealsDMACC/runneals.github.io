@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FIRST Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://firstmap.github.io/style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <div id='toggles'>
+        <div id='team_toggle' onclick="toggleMarkers('teams')">T</div>
+        <div id='regional_toggle' onclick="toggleMarkers('regionals')">R</div>
+        <div id='district_toggle' onclick="toggleMarkers('districts')">D</div>
+    </div>
+
+    <a href="https://github.com/FIRSTMap/firstmap.github.io" class="github-banner" target="_blank">Fork on GitHub</a>
+
+    <!-- Javascript Scripts -->
+    <script src="https://firstmap.github.io/data.js"></script>
+    <script src="https://firstmap.github.io/competitions.js"></script>
+    <script src="https://firstmap.github.io/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABrEZwgm0BZrNJuYrAxcyozSQET4HILUU&callback=initMap" async defer></script>
+</body>
+
+</html>
