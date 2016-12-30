@@ -117,6 +117,10 @@ var teamState = true;
 var regState = true;
 var distState = true;
 
+var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://runneals.github.io/gmapscluster/m'});
+      }
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: {
