@@ -198,11 +198,11 @@ function initMap() {
 				color: '#2c5a71'
 			}]
 		}]
-	var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://runneals.github.io/gmapscluster/m'});
       }
 	});
-
+	var markerCluster = new MarkerClusterer(map, markers,
+        {imagePath: 'https://runneals.github.io/gmapscluster/m'});
+        
 	for (i = 0; i < teams.length; i++) {
 		createTeamMarker(coordinates[i], teams[i]);
 	}
@@ -214,6 +214,7 @@ function initMap() {
 	for (i = 0; i < districts.length; i++) {
 		createCompetitionMarker('district', districts[i]);
 	}
+
 }
 
 function createCompetitionMarker(type, competitionEntry) {
