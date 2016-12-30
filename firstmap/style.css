@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(Roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: #173340;
+}
+#map {
+    height: 100%;
+}
+.gm-style {
+    background-color: #173340 !important;
+}
+.gm-style-iw {
+    border-radius: 2px 2px 0 0;
+}
+h1 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+p {
+    text-align: center;
+}
+ul {
+    margin-top: 10px;
+    list-style-type: none;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+.github-banner {
+    position: absolute;
+    top: 40px;
+    left: -80px;
+    padding: 10px;
+    color: white;
+    background: #175f7e;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(-40deg);
+    cursor: url(fork.ico), pointer;
+}
+#toggles {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    height: 25px;
+    width: 105px;
+}
+#toggles > div {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    background-color: white;
+    float: right;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 3px;
+    cursor: default
+}
